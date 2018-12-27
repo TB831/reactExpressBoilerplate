@@ -13,12 +13,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server/server": "node-env-run server --exec nodemon | pino-colada",
+    "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
+  "proxy": "http://localhost:3001",
   "browserslist": [
     ">0.2%",
     "not dead",
